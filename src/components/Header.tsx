@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Header: React.FC = () => {
   return (
     <header className="bg-gray-800 p-4 flex justify-between items-center">
-      <div className="text-white text-xl font-bold">Your Name</div>
+      <div className="text-white text-xl font-bold">Max Verhoef</div>
       <nav>
         <ul className="flex space-x-4">
           <li>
