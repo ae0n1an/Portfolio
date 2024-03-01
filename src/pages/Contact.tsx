@@ -1,7 +1,8 @@
 import React from 'react';
 import Header from '../components/Header';
 import { Link } from 'react-router-dom';
-import { FaLinkedin, FaGithub } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaPhoneAlt } from "react-icons/fa";
+import { IoIosMail } from "react-icons/io";
 
 const Contact: React.FC = () => {
   const headerHeight = 4;
@@ -34,12 +35,20 @@ const Contact: React.FC = () => {
                     <FaGithub className="text-4xl hover:text-gray-600 transition duration-300" />
                   </a>
                 </div>
+              </div>
+              <div className="mt-4 flex flex-col lg:flex-row items-center lg:items-start space-y-4 lg:space-y-0 lg:space-x-4">
                 <div>
-                  <p className="text-lg font-semibold">Phone:</p>
-                  <p>{phoneNumber}</p>
+                  <FaPhoneAlt className="text-4xl"/>
                 </div>
                 <div>
-                  <p className="text-lg font-semibold">Email:</p>
+                  <p>{phoneNumber}</p>
+                </div>
+              </div>
+              <div className="mt-4 flex flex-col lg:flex-row items-center lg:items-start space-y-4 lg:space-y-0 lg:space-x-4">
+                <div>
+                  <IoIosMail className="text-4xl"/>
+                </div>
+                <div>
                   <p>{emailAddress}</p>
                 </div>
               </div>

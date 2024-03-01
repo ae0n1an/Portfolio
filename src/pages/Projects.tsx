@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Header from '../components/Header';
 import ProjectScroller from '../components/ProjectScroller';
 import { FaGithub } from 'react-icons/fa';
+import { GrDeploy } from "react-icons/gr";
 import qwirkle from '../assets/images/qwirkle.png'
 
 interface Project {
@@ -61,15 +62,19 @@ const Projects: React.FC = () => {
             </div>
             <div className="text-center lg:text-left lg:w-1/2">
                 <div>
-                  <h2 className="text-4xl font-bold mb-4">{projects[selectedProjectIndex].title}</h2>
-                  <div className="flex items-center space-x-4 mb-4">
-                    <a href={projects[selectedProjectIndex].githubLink} target="_blank" rel="noopener noreferrer">
-                      <FaGithub className="text-4xl hover:text-gray-600 transition duration-300" />
-                    </a>
-                    <a href={projects[selectedProjectIndex].projectLink} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold hover:underline">
-                      Deployed Link
-                    </a>
-                  </div>
+                  <h2 className="text-4xl font-bold mb-4">{projects[selectedProjectIndex].title} </h2>
+                  <a href={projects[selectedProjectIndex].githubLink} target="_blank" rel="noopener noreferrer" className="flex items-center space-x-4 mb-4 hover:text-gray-600 transition duration-300 hover:underline">
+                    <FaGithub className="text-4xl"  />
+                    <p className="text-lg font-semibold hover:underline">
+                    GitHub
+                    </p>
+                  </a>
+                  <a href={projects[selectedProjectIndex].projectLink} target="_blank" rel="noopener noreferrer" className="flex items-center space-x-4 mb-4 hover:text-gray-600 transition duration-300 hover:underline">
+                    <GrDeploy className="text-4xl"  />
+                    <p className="text-lg font-semibold hover:underline">
+                    Deployed Version
+                    </p>
+                  </a>
                   <div className="mb-4">
                     <p className="text-lg font-semibold">Skills:</p>
                     <ul className="list-disc list-inside">
