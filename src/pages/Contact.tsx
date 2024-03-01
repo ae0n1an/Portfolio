@@ -20,7 +20,7 @@ const Contact: React.FC = () => {
       <div className="min-h-screen flex flex-col lg:flex-row justify-center items-start lg:items-center bg-gradient-to-b from-blue-300 to-blue-500 text-white" style={{ minHeight: `calc(100vh - ${headerHeight}rem)` }}>
         <div className="flex flex-col lg:w-2/3 p-8 mx-auto">
           <div className="lg:flex justify-center lg:items-center">
-            <div className="text-center lg:text-left lg:w-2/3">
+            <div className="text-center lg:text-left lg:w-1/2">
               <h1 className="text-4xl font-bold mb-2">Contact Me</h1>
               <p className="text-lg mb-4">
                 Have a question or want to work together? Feel free to reach out!
