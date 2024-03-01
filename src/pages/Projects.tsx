@@ -5,6 +5,7 @@ import { FaGithub } from 'react-icons/fa';
 import { GrDeploy } from "react-icons/gr";
 import qwirkle from '../assets/images/qwirkle.png';
 import researchDock from '../assets/images/researchDock.png';
+import compatible from '../assets/images/compatible.png';
 
 interface Project {
     image: string;
@@ -36,7 +37,7 @@ const Projects: React.FC = () => {
       description: 'Platform for research collaboration',
     },
     {
-      image: 'https://via.placeholder.com/150',
+      image: compatible,
       githubLink: "https://github.com/compatibledating/compatible-ios",
       projectLink: '',
       techStack: ["Swift", "Figma", "XCode"],
@@ -70,12 +71,14 @@ const Projects: React.FC = () => {
                     GitHub
                     </p>
                   </a>
+                  {projects[selectedProjectIndex].projectLink ?
                   <a href={projects[selectedProjectIndex].projectLink} target="_blank" rel="noopener noreferrer" className="flex items-center space-x-4 mb-4 hover:text-gray-600 transition duration-300 hover:underline">
                     <GrDeploy className="text-4xl"  />
                     <p className="text-lg font-semibold hover:underline">
                     Deployed Version
                     </p>
-                  </a>
+                  </a> : <></>
+                  }
                   <div className="mb-4">
                     <p className="text-lg font-semibold">Skills:</p>
                     <ul className="list-disc list-inside">
