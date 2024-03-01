@@ -9,7 +9,7 @@ const experiences = [
     company: "Infosys",
     position: "Software Test Engineer",
     duration: "Feb 2023 - Present",
-    description: `I am currently working as a software test Engineer at Infosys where I have been devlopling python scripts to make API calls to retireve data
+    description: `I am currently working as a software test Engineer at Infosys where I have been developing python scripts that make API calls to retrieve data
     from LoadRunners performance centre.`,
     skills: ["LoadRunner", "Python", "RESTful APIs"],
   },

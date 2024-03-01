@@ -26,7 +26,7 @@ const Projects: React.FC = () => {
       projectLink: 'https://qwirkle-3uvo.onrender.com',
       techStack: ["React", "Typescript", "Socket IO", "Tailwind CSS"],
       title: 'Qwirkle',
-      description: 'Board game using React and Socket IO',
+      description: 'Online version of the tile game Qwirkle using React and Socket IO with online multiplayer as well as local',
     },
     {
       image: researchDock,
@@ -34,7 +34,7 @@ const Projects: React.FC = () => {
       projectLink: 'https://research-dock.onrender.com/',
       techStack: ["React", "Typescript", "Tailwind CSS", "Django", "Python"],
       title: 'Research Dock',
-      description: 'Platform for research collaboration',
+      description: 'Platform for research collaboration using Django for backend',
     },
     {
       image: compatible,
