@@ -3,15 +3,15 @@ import Header from '../components/Header';
 import ProjectScroller from '../components/ProjectScroller';
 import { Link } from 'react-router-dom';
 
-const Home: React.FC = () => {
+const Experience: React.FC = () => {
   const headerHeight = 4;
   return (
     <div>
-      <Header />
+      <Header/>
       <div className="min-h-screen flex flex-col lg:flex-row justify-center items-start lg:items-center bg-gradient-to-b from-blue-300 to-blue-500 text-white" style={{ minHeight: `calc(100vh - ${headerHeight}rem)` }}>
         <div className="flex flex-col lg:w-2/3 p-8 mx-auto">
           <div className="lg:flex justify-center lg:items-center">
-            <div className="text-center lg:text-left lg:w-2/3">
+            <div className="text-center lg:text-left">
               <p className="text-sm">Hi, my name is</p>
               <h1 className="text-4xl font-bold mb-2">Max Verhoef</h1>
               <p className="text-lg mb-4">
@@ -39,4 +39,4 @@ const Home: React.FC = () => {
   );
 };
 
-export default Home;
+export default Experience;

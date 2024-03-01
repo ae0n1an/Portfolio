@@ -4,6 +4,8 @@ import { BsChevronLeft, BsChevronRight } from 'react-icons/bs';
 
 interface Project {
   image: string;
+  title: string;
+  link: string;
   description: string;
 }
 
@@ -12,15 +14,21 @@ const ProjectScroller: React.FC = () => {
   const [projects] = useState<Project[]>([
     {
       image: qwirkle,
-      description: 'Qwirkle: Board game using React and Socket IO',
+      title: 'Qwirkle',
+      link: 'https://qwirkle-3uvo.onrender.com',
+      description: 'Board game using React and Socket IO',
     },
     {
       image: 'https://via.placeholder.com/150',
-      description: 'Research Dock: Platform for research Collaboration',
+      title: 'Research Dock',
+      link: 'https://qwirkle-3uvo.onrender.com',
+      description: 'Platform for research collaboration',
     },
     {
       image: 'https://via.placeholder.com/150',
-      description: 'Compatible: Mobile Dating application',
+      title: 'Compatible',
+      link: 'https://qwirkle-3uvo.onrender.com',
+      description: 'Mobile dating application',
     }
   ]);
 
@@ -41,8 +49,9 @@ const ProjectScroller: React.FC = () => {
           <BsChevronLeft className="text-lg" />
         </button>
         <div className="flex flex-col items-center justify-center">
+          <h2 className="mb-2 text-lg font-bold text-center w-64">{projects[currentProjectIndex].title}</h2>
           <img src={projects[currentProjectIndex].image} alt={`Project ${currentProjectIndex + 1}`} className="w-64 h-64 object-cover rounded-lg shadow-lg" />
-          <p className="mt-2 text-sm text-center">{projects[currentProjectIndex].description}</p>
+          <p className="mt-2 text-sm text-center w-64">{projects[currentProjectIndex].description}</p>
         </div>
         <button onClick={nextProject} className="bg-gray-200 hover:bg-gray-300 rounded-full p-2 ml-2">
           <BsChevronRight className="text-lg" />
