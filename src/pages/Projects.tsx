@@ -3,7 +3,8 @@ import Header from '../components/Header';
 import ProjectScroller from '../components/ProjectScroller';
 import { FaGithub } from 'react-icons/fa';
 import { GrDeploy } from "react-icons/gr";
-import qwirkle from '../assets/images/qwirkle.png'
+import qwirkle from '../assets/images/qwirkle.png';
+import researchDock from '../assets/images/researchDock.png';
 
 interface Project {
     image: string;
@@ -27,7 +28,7 @@ const Projects: React.FC = () => {
       description: 'Board game using React and Socket IO',
     },
     {
-      image: 'https://via.placeholder.com/150',
+      image: researchDock,
       githubLink: "https://github.com/ResearchDock?tab=repositories",
       projectLink: 'https://research-dock.onrender.com/',
       techStack: ["React", "Typescript", "Tailwind CSS", "Django", "Python"],
